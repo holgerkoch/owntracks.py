@@ -88,7 +88,7 @@ if __name__ == '__main__':
                print abstand
                # zeitstempel ermitteln
                gpstime = datetime.datetime(int(gpsd.utc[0:4]), int(gpsd.utc[5:7]), int(gpsd.utc[8:10]), int(gpsd.utc[11:13]), int(gpsd.utc[14:16]), int(gpsd.utc[17:19]))
-               timestamp = str(int(time.mktime(gpstime.timetuple())))
+               timestamp = int(time.mktime(gpstime.timetuple()))
                data = {
                   '_type' : 'location',
                   'tst'   : timestamp,
