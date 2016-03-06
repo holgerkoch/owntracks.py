@@ -22,10 +22,11 @@ Howto:
       - python owntracks.py
 - you should see som output:
 
+<pre>
 root@raspberrypi:~/owntracks# python owntracks.py
 Connected with result code 0
 5727569.43952 # distance in meter of the last send position, the first is the diffence from 0:0 
 {"lat": 53.968613333, "tid": "RP", "_type": "location", "lon": 14.050865, "tst": "1457264819"}
 
-
+</pre>
 
