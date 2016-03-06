@@ -5,21 +5,21 @@ python based owntracks client for raspberry pi
 Howto:
 - apt-get install gpsd gpsd-clients
 - connect the gps receiver an test it, you should see a data stream
-     gpspipe -r
+     - gpspipe -r
 - install the python mqtt library
-     pip install paho-mqtt
+     - pip install paho-mqtt
 - download owntracks.py and set the values
-      brokerserver
-      brokerport
-      brokeruser, if you need authentication, if not remove the "client.username_pw_set" line
-      brokerpassword, if you need authentication, if not remove the "client.username_pw_set" line
-      set the clientid
-      set the topic of your broker
-      set max_abstand, defined in meter how often should be send a message
-      max_transfer, defined in seconds, how often should be send a message
-      set the ca certificate, if you use TLS encryption, otherwise remove the line "client.tls_set("ca.crt")"
+      - brokerserver
+      - brokerport
+      - brokeruser, if you need authentication, if not remove the "client.username_pw_set" line
+      - brokerpassword, if you need authentication, if not remove the "client.username_pw_set" line
+      - set the clientid
+      - set the topic of your broker
+      - set max_abstand, defined in meter how often should be send a message
+      - max_transfer, defined in seconds, how often should be send a message
+      - set the ca certificate, if you use TLS encryption, otherwise remove the line "client.tls_set("ca.crt")"
 - start the programm
-      python owntracks.py
+      - python owntracks.py
 - you should see som output:
 
 root@raspberrypi:~/owntracks# python owntracks.py
